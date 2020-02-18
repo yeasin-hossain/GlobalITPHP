@@ -33,9 +33,9 @@
 
 
     if($num1==10){
-        echo 'positive';
+        echo 'positive ';
     }else{
-        echo 'negative';
+        echo 'negative ';
     }
     // if else statement in php
 
@@ -44,7 +44,7 @@
 
 
 
-    $Name='Yeasin';
+    $Name='Yeasin ';
 
     function globalName(){
         global $Name;
@@ -57,7 +57,7 @@
 
 
     function localname(){
-         $name='Shanto';
+         $name='Shanto ';
         echo $name;
     }
     localname();
@@ -102,14 +102,28 @@
     echo $x;
 
 
-    // simple Age Calculator
-    
+    // simple Age Calculator with one condition test
+
     function ageCal($yourBirthDay){
+
         $currentYear=2020;
-        echo $currentYear-$yourBirthDay .'years';
+        // echo $currentYear-$yourBirthDay .'years';
+         $hbd = $currentYear-$yourBirthDay;
+
+        if($hbd>=18){
+            echo ' You are eligible for registration ' . ' and your age is: ' .$hbd;
+        }
+        else{
+            echo ' Sorry! You are not eligible. and your age is: ' .$hbd;
+        }
     }
 
-    ageCal(1998);
-    // result is 22 
+    ageCal(2000);
+    // result is  you are eligible for registetion and your age is: 20
+
+    
+
+
+
 
 ?>
