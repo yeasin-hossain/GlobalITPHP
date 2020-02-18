@@ -1,5 +1,24 @@
 <?php
 
+                /* 
+                
+                                    Today we learn 
+
+*What is PHP
+    Once upon a time developer called personal Home page, but actually PHP is a server-side scripting language.
+*How to run 
+    without server you can't run PHP, so you should use a private server by using  XAMPP. in your Computer.
+*How to declare a Variable  
+    Variable are used as "containers" in which we store information.A PHP variable starts with a dollar sign ($), which is followed by the name of the variable. Rules for PHP variables:
+    - A variable name must start with a letter or an underscore
+    - A variable name cannot start with a number
+    - A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+    - Variable names are case-sensitive ($name and $NAME would be two different variables) 
+
+                
+                */
+
+
     $num1=10;
     // Variables asign in php
 
@@ -28,7 +47,7 @@
 
 
     function localname(){
-         $name='shanto';
+         $name='Shanto';
         echo $name;
     }
     localname();
