@@ -25,16 +25,22 @@
     for($i=1; $i<$num1; $i++){
         echo $i;
     }
-
     // for loop in php
+
+
+
 
     if($num1==10){
         echo 'positive';
     }else{
         echo 'negative';
     }
-    
     // if else statement in php
+
+
+
+
+
 
     $Name='Yeasin';
 
@@ -46,6 +52,8 @@
     // function using global method for accessed globaly assigend variable in php
 
 
+
+
     function localname(){
          $name='Shanto';
         echo $name;
@@ -53,11 +61,21 @@
     localname();
     // function using  local variable in php
 
+
+
+
     $num2 = 6;
-
-
     
     // Operators 
+
+    // Assignment Operator      =The left operand gets set to the value of the expression on the right ,+=, -= ,*= ,/= ,%=
+    // Arithmetic Operators     +Addition, -Subtraction, *Multiplication, /Division, %Modulus, **Exponentiation 
+    // Comparison operators     ==	Equal, ===	Identical,!= Not equal,!==	Not identical,>	Greater than,< Less than,>=	Greater than or equal to,<=	Less than or equal to,<=> Spaceship
+    // Logical Operators        !,|| ,&& ,xor, or,and
+    // Increment/Decrement operators  ++$x Pre-increment,$x++ Post-increment,--$x Pre-decrement,$x-- Post-decrement
+    // String operators         . Concatenation,.= Concatenation assignment
+    // Array operators          + Union,== Equality,===	Identity,!=	Inequality,<> Inequality,!== Non-identity
+    // Conditional assignment operators  ?:	Ternary, ?? Null coalescing
 
   //Addition
   echo $num1 + $num2; //14
