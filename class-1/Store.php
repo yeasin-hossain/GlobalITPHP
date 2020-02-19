@@ -8,71 +8,74 @@
 
 
     //customar requirment 
-$fruitName='malta';
+$fruitName='banana';
 
     // I am using the switch technology looking for my data
 
 switch($fruitName){
     //if data true, then the function will check the price of fruit. if able to buy then show cart, else subtraction for how much money need.
     case 'apple':
-        echo 'Your Apple is available! ';
+        echo 'Your Apple is available!     ';
         function fruitPrice($price){
             if(20<=$price){
                 echo 'please add to cart ';
             }else{
-                echo 20-$price .' please add this money';
+                echo 20-$price .'$ need! ';
             }
         }
         //all case are same
     break;
 
     case 'orange':
-        echo 'Your Orange is available! ';
+        echo 'Your Orange is available!    ';
         function fruitPrice($price){
             if(20<=$price){
                 echo 'please add to cart ';
             }else{
-                echo 20-$price .' please add this money';
+                echo 20-$price .'$ need! ';
             }
         }
     break;
 
 
     case 'malta':
-        echo 'Your Malta is available! ';
+        echo 'Your Malta is available!    ';
         function fruitPrice($price){
             if(20<=$price){
                 echo 'please add to cart ';
             }else{
-                echo 20-$price .' please add this money';
+                echo 20-$price .'$ need! ';
             }
         }
     break;
 
 
     case 'mango':
-        echo 'Your Bango is available!  ';
+        echo 'Your Bango is available!     ';
         function fruitPrice($price){
             if(20<=$price){
                 echo 'please add to cart ';
             }else{
-                echo 20-$price .' please add this money';
+                echo 20-$price .'$ need! ';
             }
         }
     break;
 
 
     case 'banana':
-        echo 'Your Banana is available  ';
+        echo 'Your Banana is available!    ';
         function fruitPrice($price){
             if(20<=$price){
                 echo 'please add to cart ';
             }else{
-                echo 20-$price .' please add this money';
+                echo 20-$price .'$ need! ';
             }
         }
     break;
+    default:
+        echo 'Sorry! not Available'; 
 }
 
-fruitPrice(90);
+fruitPrice(25);
+
 ?>
