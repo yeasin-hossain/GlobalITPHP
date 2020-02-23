@@ -1,8 +1,8 @@
 <?php
 
 
-$os = array("appple", "banana", "mango", "lichi",'computer','phone','andriod');
-    $data ='computer';
+$os = ["appple", "banana", "mango", "lichi",'computer','phone','andriod'];
+    $data ='mango';
     $data = strtolower($data);
     
     if (in_array($data, $os)) {
@@ -22,6 +22,13 @@ $os = array("appple", "banana", "mango", "lichi",'computer','phone','andriod');
     }
 
     pricelist(20);
+
+    
+//     $fruits = ['mango', 'apple', 'banana'];
+// $data = 'mango';
+// $price = 10;
+
+// echo (in_array($data, $fruits)) ? $price > 20 ? 'Added to cart' : 'We have ' . $data . ' but your budget  is '. (20 - $price) . ' BDT short' : 'Not available in our store';
 
 
 ?>
