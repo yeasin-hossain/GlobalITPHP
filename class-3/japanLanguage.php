@@ -52,7 +52,7 @@
     }';
 
         $all=json_decode($data);
-        echo $all-> ro;
-        
+        echo $pin= $all-> na;
+
 
 ?>

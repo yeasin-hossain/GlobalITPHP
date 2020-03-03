@@ -24,7 +24,7 @@ $os = ["appple", "banana", "mango", "lichi",'computer','phone','andriod'];
     pricelist(20);
 
     
-//     $fruits = ['mango', 'apple', 'banana'];
+// $fruits = ['mango', 'apple', 'banana'];
 // $data = 'mango';
 // $price = 10;
 
