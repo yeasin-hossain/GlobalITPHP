@@ -39,7 +39,12 @@ if(isset($_GET['edit'])){
     $update = true;
     $result = $mysqli->query("SELECT * FROM data WHERE id=$id") or die($mysqli->error);
 
-    if(count($result )==  1){
+    // if(count($result)==  1){
+    //     $row = $result->fetch_array();
+    //     $name = $row['name'];
+    //     $location = $row ['location'];
+    // }
+    if(!empty($result)){
         $row = $result->fetch_array();
         $name = $row['name'];
         $location = $row ['location'];
