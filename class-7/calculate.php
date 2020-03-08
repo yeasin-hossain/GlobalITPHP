@@ -9,13 +9,16 @@ $location = '';
 
 
 
-$mysqli =new mysqli('localhost', 'root', '', 'crud') or die(mysqli_error($mysqli));
+$mysqli = new mysqli('localhost', 'root', '', 'crud') or die(mysqli_error($mysqli));
+
+// submit button action section
 
 if(isset($_POST['save'])){
 
     $name = $_POST['name'];
     $location = $_POST['location'];
 
+// if submit button press with valid data then data will isrert in database
     $mysqli->query("INSERT INTO data (name,location) VALUES('$name', '$location')")or
     die($mysqli->error);
 
@@ -25,14 +28,19 @@ if(isset($_POST['save'])){
     header("location: index.php");
 } 
 
+// delete button action section
+
 if(isset($_GET['delete'])){
     $id = $_GET['delete'];
     $mysqli->query("DELETE FROM data WHERE id=$id") or die($mysqli->error);
 
     $_SESSION['message'] = "Record has been deleted!";
     $_SESSION['msg_type'] = "danger";
+    
     header("location: index.php");
 }
+
+// edit button action section
 
 if(isset($_GET['edit'])){
     $id = $_GET['edit'];
@@ -50,6 +58,8 @@ if(isset($_GET['edit'])){
         $location = $row ['location'];
     }
 }
+
+// update button action section
 
 if(isset($_POST['update'])){
     $id = $_POST['id'];
